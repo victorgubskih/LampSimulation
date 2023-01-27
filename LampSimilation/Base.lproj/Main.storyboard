@@ -14,14 +14,14 @@
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LampSimilation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ua3-s5-i7J">
-                                <rect key="frame" x="16" y="60" width="382" height="100"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRm-eT-7z8">
-                                        <rect key="frame" x="145" y="24" width="92" height="52"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="10" y="24" width="394" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -30,14 +30,13 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="tRm-eT-7z8" secondAttribute="bottom" constant="24" id="9vr-IJ-HI2"/>
                                     <constraint firstItem="tRm-eT-7z8" firstAttribute="top" secondItem="ua3-s5-i7J" secondAttribute="top" constant="24" id="KDQ-Oa-mth"/>
-                                    <constraint firstAttribute="width" constant="380" id="RYM-bh-8qQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="tRm-eT-7z8" secondAttribute="trailing" constant="145" id="mgN-yF-w8w"/>
+                                    <constraint firstAttribute="trailing" secondItem="tRm-eT-7z8" secondAttribute="trailing" constant="10" id="mgN-yF-w8w"/>
                                     <constraint firstAttribute="height" constant="100" id="miU-B6-5Me"/>
-                                    <constraint firstItem="tRm-eT-7z8" firstAttribute="leading" secondItem="ua3-s5-i7J" secondAttribute="leading" constant="145" id="vKt-I5-5C3"/>
+                                    <constraint firstItem="tRm-eT-7z8" firstAttribute="leading" secondItem="ua3-s5-i7J" secondAttribute="leading" constant="10" id="vKt-I5-5C3"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Pp-TB-I4f">
-                                <rect key="frame" x="0.0" y="204" width="414" height="614"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Pp-TB-I4f">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="47" id="huy-fZ-hbW">
@@ -67,15 +66,15 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ua3-s5-i7J" secondAttribute="trailing" constant="16" id="38y-lj-Wth"/>
-                            <constraint firstItem="1Pp-TB-I4f" firstAttribute="top" secondItem="ua3-s5-i7J" secondAttribute="bottom" constant="44" id="3eS-ki-S9m"/>
-                            <constraint firstItem="ua3-s5-i7J" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="16" id="7gQ-Yf-a1x"/>
-                            <constraint firstItem="ua3-s5-i7J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bwU-s5-Nvg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ua3-s5-i7J" secondAttribute="trailing" constant="16" id="f9y-ZX-XTW"/>
-                            <constraint firstItem="ua3-s5-i7J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="fbH-Uw-N5y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Pp-TB-I4f" secondAttribute="bottom" constant="44" id="y4G-0o-gGS"/>
+                            <constraint firstItem="1Pp-TB-I4f" firstAttribute="top" secondItem="ua3-s5-i7J" secondAttribute="bottom" id="3eS-ki-S9m"/>
+                            <constraint firstItem="1Pp-TB-I4f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dtW-1M-jqn"/>
+                            <constraint firstItem="ua3-s5-i7J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fbH-Uw-N5y"/>
+                            <constraint firstItem="1Pp-TB-I4f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hmL-Mj-HIm"/>
+                            <constraint firstItem="ua3-s5-i7J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oc4-VC-VtT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ua3-s5-i7J" secondAttribute="trailing" id="tOd-8j-q7N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Pp-TB-I4f" secondAttribute="bottom" id="y4G-0o-gGS"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -94,9 +93,6 @@
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
