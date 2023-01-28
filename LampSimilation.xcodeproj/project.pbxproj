@@ -13,6 +13,7 @@
 		775FAC4F2980424900CAB2AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775FAC4D2980424900CAB2AA /* Main.storyboard */; };
 		775FAC512980424C00CAB2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775FAC502980424C00CAB2AA /* Assets.xcassets */; };
 		775FAC542980424C00CAB2AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775FAC522980424C00CAB2AA /* LaunchScreen.storyboard */; };
+		777F8DB129851EE200EE8448 /* LampCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F8DB029851EE200EE8448 /* LampCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		775FAC502980424C00CAB2AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		775FAC532980424C00CAB2AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		775FAC552980424C00CAB2AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		777F8DB029851EE200EE8448 /* LampCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				775FAC492980424900CAB2AA /* SceneDelegate.swift */,
 				775FAC4B2980424900CAB2AA /* ViewController.swift */,
 				775FAC4D2980424900CAB2AA /* Main.storyboard */,
+				777F8DB029851EE200EE8448 /* LampCell.swift */,
 				775FAC502980424C00CAB2AA /* Assets.xcassets */,
 				775FAC522980424C00CAB2AA /* LaunchScreen.storyboard */,
 				775FAC552980424C00CAB2AA /* Info.plist */,
@@ -141,6 +144,7 @@
 				775FAC4C2980424900CAB2AA /* ViewController.swift in Sources */,
 				775FAC482980424900CAB2AA /* AppDelegate.swift in Sources */,
 				775FAC4A2980424900CAB2AA /* SceneDelegate.swift in Sources */,
+				777F8DB129851EE200EE8448 /* LampCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
