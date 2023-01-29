@@ -28,7 +28,5 @@ class LampCell: UITableViewCell {
     }
 }
 
-protocol LampCellDelegate {
-    func didSwitch(on: Bool) 
-}
+
 

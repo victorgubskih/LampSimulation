@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    var delegate: LampCellDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ extension ViewController: UITableViewDataSource {
         else {fatalError()}
         
         cell.configure()
-        
+        delegate
         return cell
     }
     
@@ -40,6 +40,8 @@ extension ViewController: UITableViewDelegate {
     
 }
 
-func didSwitch(on: Bool) {
+protocol LampCellDelegate {
     
+   
+    func didSwitch(on: Bool)
 }
