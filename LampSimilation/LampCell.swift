@@ -12,7 +12,7 @@ class LampCell: UITableViewCell {
     @IBOutlet weak var iconView: UIImageView!
     
     @IBOutlet weak var switchView: UISwitch!
-    
+    weak var delegate: LampCellDelegate?
 
 
     override init(style: UITableViewCell.CellStyle,reuseIdentifier: String?) {

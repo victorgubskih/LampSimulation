@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var delegate: LampCellDelegate!
+    
     
     @IBOutlet weak var label: UIView!
     
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 6
     }
@@ -30,7 +30,7 @@ extension ViewController: UITableViewDataSource {
         else {fatalError()}
         
         cell.configure()
-        delegate
+        cell.delegate = self
         return cell
     }
     
@@ -38,12 +38,14 @@ extension ViewController: UITableViewDataSource {
     
 }
 
-extension ViewController: UITableViewDelegate {
+extension ViewController: LampCellDelegate {
+    func didSwitch(on: Bool) {
+    
+    }
+    
     
 }
 
-protocol LampCellDelegate {
-    
-   
+protocol LampCellDelegate: AnyObject {
     func didSwitch(on: Bool)
 }
