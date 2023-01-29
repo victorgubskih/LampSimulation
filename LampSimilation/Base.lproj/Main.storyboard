@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="47" id="huy-fZ-hbW" customClass="LampCell" customModule="LampSimilation" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LampCell" rowHeight="47" id="huy-fZ-hbW" customClass="LampCell" customModule="LampSimilation" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="huy-fZ-hbW" id="ORa-gm-klw">
@@ -52,7 +52,7 @@
                                                     <color key="thumbTintColor" systemColor="systemPinkColor"/>
                                                 </switch>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6082664" translatesAutoresizingMaskIntoConstraints="NO" id="Xi5-B5-vC5">
-                                                    <rect key="frame" x="44" y="6" width="50" height="35"/>
+                                                    <rect key="frame" x="16" y="6" width="50" height="35"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="U0N-rT-zcw"/>
@@ -63,7 +63,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="ba6-NT-jJu" secondAttribute="trailing" constant="16" id="79R-Zw-zVn"/>
                                                 <constraint firstItem="ba6-NT-jJu" firstAttribute="centerY" secondItem="Xi5-B5-vC5" secondAttribute="centerY" id="ER1-ey-Fbx"/>
-                                                <constraint firstItem="Xi5-B5-vC5" firstAttribute="leading" secondItem="ORa-gm-klw" secondAttribute="leading" constant="44" id="GpO-Do-Rrw"/>
+                                                <constraint firstItem="Xi5-B5-vC5" firstAttribute="leading" secondItem="ORa-gm-klw" secondAttribute="leading" constant="16" id="Sfm-A3-7VN"/>
                                                 <constraint firstItem="Xi5-B5-vC5" firstAttribute="top" secondItem="ORa-gm-klw" secondAttribute="top" constant="6" id="i2a-wy-rGh"/>
                                                 <constraint firstAttribute="bottom" secondItem="Xi5-B5-vC5" secondAttribute="bottom" constant="6" id="piE-ia-P0D"/>
                                             </constraints>
@@ -76,6 +76,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mts-VE-FqJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="GUA-F8-W6z"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
