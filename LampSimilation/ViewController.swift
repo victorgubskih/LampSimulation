@@ -40,4 +40,6 @@ extension ViewController: UITableViewDelegate {
     
 }
 
-
+func didSwitch(on: Bool) {
+    
+}
