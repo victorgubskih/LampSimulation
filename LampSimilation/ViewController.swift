@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     var delegate: LampCellDelegate!
     
+    @IBOutlet weak var label: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
