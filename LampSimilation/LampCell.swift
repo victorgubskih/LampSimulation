@@ -23,8 +23,15 @@ class LampCell: UITableViewCell {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        switchView.addTarget(self, action: #selector(didSwitch), for: .valueChanged)
+    }
     func configure() {
       
+    }
+    @objc func didSwitch() {
+        self.delegate?.didSwitch(on: self.switchView.isOn)
     }
 }
 
