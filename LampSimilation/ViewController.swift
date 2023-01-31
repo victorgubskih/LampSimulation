@@ -7,10 +7,11 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var label: UIView!
+    @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,10 +41,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension ViewController: LampCellDelegate {
     func didSwitch(on: Bool) {
+        label.text = on ? "On" : "Of"
     
     }
-    
-    
 }
 
 protocol LampCellDelegate: AnyObject {
