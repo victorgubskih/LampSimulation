@@ -13,7 +13,8 @@ class LampCell: UITableViewCell {
     
     @IBOutlet weak var switchView: UISwitch!
     weak var delegate: LampCellDelegate?
-
+    
+    
 
     override init(style: UITableViewCell.CellStyle,reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

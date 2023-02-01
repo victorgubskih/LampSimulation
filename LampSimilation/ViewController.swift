@@ -10,14 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var label: UILabel!
+    var switchOnCount: Int = 6
+    var switchOffCount: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
-        
+        updateSwitch()
+    }
+    
+    private func updateSwitch() {
+        label.text = "On: \(switchOnCount)  Off: \(switchOffCount)"
     }
 }
 
@@ -34,14 +37,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.delegate = self
         return cell
     }
-    
-   
-    
 }
 
 extension ViewController: LampCellDelegate {
     func didSwitch(on: Bool) {
-        label.text = on ? "On" : "Of"
+        switchOnCount = on ? switchOnCount + 1 : switchOnCount - 1
+        switchOffCount = on ? switchOffCount - 1 : switchOffCount + 1
+        updateSwitch()
     
     }
 }
