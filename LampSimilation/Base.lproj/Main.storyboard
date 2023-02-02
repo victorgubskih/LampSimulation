@@ -19,8 +19,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ua3-s5-i7J" userLabel="Top view">
                                 <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRm-eT-7z8">
-                                        <rect key="frame" x="10" y="24" width="394" height="52"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRm-eT-7z8">
+                                        <rect key="frame" x="10" y="0.0" width="394" height="100"/>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -29,8 +29,8 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="tRm-eT-7z8" secondAttribute="bottom" constant="24" id="9vr-IJ-HI2"/>
-                                    <constraint firstItem="tRm-eT-7z8" firstAttribute="top" secondItem="ua3-s5-i7J" secondAttribute="top" constant="24" id="KDQ-Oa-mth"/>
+                                    <constraint firstAttribute="bottom" secondItem="tRm-eT-7z8" secondAttribute="bottom" id="9vr-IJ-HI2"/>
+                                    <constraint firstItem="tRm-eT-7z8" firstAttribute="top" secondItem="ua3-s5-i7J" secondAttribute="top" id="KDQ-Oa-mth"/>
                                     <constraint firstAttribute="trailing" secondItem="tRm-eT-7z8" secondAttribute="trailing" constant="10" id="mgN-yF-w8w"/>
                                     <constraint firstAttribute="height" constant="100" id="miU-B6-5Me"/>
                                     <constraint firstItem="tRm-eT-7z8" firstAttribute="leading" secondItem="ua3-s5-i7J" secondAttribute="leading" constant="10" id="vKt-I5-5C3"/>
